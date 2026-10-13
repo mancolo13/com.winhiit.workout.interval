@@ -16,7 +16,7 @@ class _Tab2ScreenState extends State<Tab2Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WinHIIT • Rounds'),
+        title: const Text('Win • Rounds'),
         actions: [
           IconButton(
             icon: const Icon(Icons.star_rounded, color: AppTheme.secondaryColor),

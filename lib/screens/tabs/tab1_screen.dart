@@ -18,7 +18,7 @@ class _Tab1ScreenState extends State<Tab1Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WinHIIT • Timer'),
+        title: const Text('Win • Timer'),
         actions: [
           IconButton(
             icon: const Icon(Icons.bolt, color: AppTheme.primaryColor),
