@@ -16,10 +16,10 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _screens = const [
+    Tab4Screen(),
     Tab1Screen(),
     Tab2Screen(),
     Tab3Screen(),
-    Tab4Screen(),
   ];
 
   @override
@@ -32,11 +32,6 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.timer_outlined),
-          selectedIcon: const Icon(Icons.timer, color: AppTheme.primaryColor),
-          label: 'Timer',
-        ),
         NavigationDestination(
           icon: const Icon(Icons.fitness_center_outlined),
           selectedIcon: const Icon(Icons.fitness_center, color: AppTheme.primaryColor),
@@ -52,7 +47,11 @@ class _MainScreenState extends State<MainScreen> {
           selectedIcon: const Icon(Icons.history, color: AppTheme.primaryColor),
           label: 'History',
         ),
-
+        NavigationDestination(
+          icon: const Icon(Icons.timer_outlined),
+          selectedIcon: const Icon(Icons.timer, color: AppTheme.primaryColor),
+          label: 'Timer',
+        ),
         ],
       ),
     );
